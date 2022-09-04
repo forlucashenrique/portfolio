@@ -1,0 +1,179 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Oswald:wght@200;300;400;600;700&display=swap');
+
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    width: 100vw;
+    height: 100vh;
+}
+
+body {
+    width: 100%;
+    height: 100%;
+    color: #26282a;
+    font-family: 'Lato', sans-serif;
+    font-family: 'Oswald', sans-serif;
+    animation: fadeInContent 1.5s;
+}
+
+.container {
+    max-width: 960px;
+    margin: 0 auto;
+    height: 100%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-direction: column;
+}
+
+
+
+/* my info */
+
+.container-content {
+    width: 100%;
+}
+
+.container-img {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+}
+
+.container-img img {
+    width: 20%;
+    box-shadow: 0px 0px 3px 3px #26282a17;
+    border-radius: 50%;
+}
+
+.container-info {
+    width: 100%;
+    text-align: center;
+}
+
+.container-info > h1 {
+    font-size: 2.5em;
+    font-weight: 500;
+}
+
+.container-info > p {
+    font-size: 1.5em;
+    font-weight: 300;
+    font-style: italic;
+}
+
+/* button project */
+
+.container-button-projects button {
+    width: 200px;
+    background: #fff;
+    border: 1px solid #26282a;
+    color: #26282a;
+    padding: 10px;
+    font-size: 1.2em;
+    cursor: pointer;
+    transition: background .5s, color .5s;
+}
+
+.container-button-projects button:hover {
+    background-color: #26282a;
+    color: #fff;
+}
+
+/* footer */
+
+footer {
+    width: 100%;
+    height: 100px;
+}
+
+.container-social-medias {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+.social-medias-links {
+    width: 200px;
+    display: flex;
+    justify-content: space-around;
+    
+}
+
+.social-medias-links > a {
+    text-decoration: none;
+    color:#26282a;
+}
+
+.fa-brands {
+    font-size: 24px;
+    cursor: pointer;
+    transition: color .5s;
+}
+
+.fa-twitter:hover {
+    color: #28a0d5;
+}
+
+.fa-github:hover {
+    color: #26282a8a
+}
+
+.fa-linkedin:hover {
+    color: #0071ae;
+}
+
+
+.container-languages {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    margin-top: 10px;
+}
+
+.languages-links {
+    width: 120px;
+    display: flex;
+    justify-content: space-around;
+}
+
+.languages-links > a {
+    color: #0071ae;
+    text-decoration: none;
+}
+
+
+.languages-links > a:hover {
+    text-decoration: underline;
+    cursor: pointer;
+}
+
+
+
+@keyframes fadeInContent {
+    from {opacity: 0;}
+    to {opacity: 1;}
+}
+
+@media screen and (max-width: 600px){
+    .container-info > h1 {
+        font-size: 1.5em;
+        font-weight: 500;
+    }
+
+    .container-img img {
+        width: 30%;
+        box-shadow: 0px 0px 3px 3px #26282a17;
+        border-radius: 50%;
+    }
+
+    .container-info > p {
+        font-size: 1.2em;
+    }
+    
+}
