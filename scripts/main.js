@@ -8,7 +8,6 @@ var oldPText = p.innerText
 var oldButtonProjectsText = buttonProjects.innerText
 
 
-
 buttonBR.addEventListener('click', function updateLanguage(e){
     e.preventDefault()
 
