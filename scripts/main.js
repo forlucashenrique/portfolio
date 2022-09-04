@@ -12,7 +12,7 @@ var oldButtonProjectsText = buttonProjects.innerText
 buttonBR.addEventListener('click', function updateLanguage(e){
     e.preventDefault()
 
-    h1.innerText = 'E aí! Meu nome é Lucas Henrique'
+    h1.innerText = 'E aí! Meu nome é Lucas Henrique.'
     p.innerText = 'Eu sou um estudante de Matemática e um desenvolvedor de software iniciante.'
     buttonProjects.innerText = 'Veja meus projetos'
 })
